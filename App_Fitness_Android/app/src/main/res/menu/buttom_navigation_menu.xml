@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/home_page"
+        android:title="@string/buttom_home_item"
+        android:icon="@drawable/ic_home_foreground"/>
+    <item
+        android:id="@+id/collection_page"
+        android:title="@string/buttom_training_title"
+        android:icon="@drawable/ic_star_foreground"/>
+
+    <item
+        android:id="@+id/add_sport_page"
+        android:title="@string/buttom_add_sport_item"
+        android:icon="@drawable/ic_plus_foreground"/>
+</menu>

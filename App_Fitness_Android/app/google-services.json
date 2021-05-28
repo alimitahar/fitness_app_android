@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "61026786196",
+    "project_id": "nature-ab277",
+    "storage_bucket": "nature-ab277.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:61026786196:android:f160eb55061e15eb060d81",
+        "android_client_info": {
+          "package_name": "com.tahar.nature"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "61026786196-1a59l2go1ija5lu5k1keechaai33r5ts.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDvCjnrHschEppJb3r166lPI2R32SIPk-c"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "61026786196-1a59l2go1ija5lu5k1keechaai33r5ts.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

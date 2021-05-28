@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="360dp"
+    android:layout_height="500dp"
+    android:padding="15dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:elevation="4dp"
+        app:cardCornerRadius="8dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/image_item"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:src="@drawable/trending1" />
+
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/popup_sport_name"
+        style="@style/TitleTextStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:text="@string/popup_sport_name"
+        app:layout_constraintBottom_toBottomOf="@+id/cardView"
+        app:layout_constraintStart_toEndOf="@+id/cardView"
+        app:layout_constraintTop_toTopOf="@+id/cardView"
+        app:layout_constraintVertical_bias="0.568" />
+
+    <ImageView
+        android:id="@+id/close_button"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginEnd="64dp"
+        android:src="@drawable/ic_close_foreground"
+        app:layout_constraintBottom_toBottomOf="@+id/popup_sport_name"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/popup_sport_name"
+        app:layout_constraintVertical_bias="0.672" />
+
+    <TextView
+        android:id="@+id/popup_sport_description_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/default_margin"
+        android:text="@string/popup_sport_description_title"
+        app:layout_constraintStart_toStartOf="@+id/cardView"
+        app:layout_constraintTop_toBottomOf="@+id/cardView"
+        style="@style/TitleTextStyle"/>
+
+    <TextView
+        android:id="@+id/popup_sport_description_subtitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/popup_sport_description_subtitle"
+        app:layout_constraintStart_toStartOf="@+id/popup_sport_description_title"
+        app:layout_constraintTop_toBottomOf="@+id/popup_sport_description_title"
+        style="@style/DefaultTextStyle"/>
+
+    <TextView
+        android:id="@+id/popup_sport_description_subtitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/popup_sport_difficult_title"
+        android:layout_marginTop="@dimen/default_margin"
+        app:layout_constraintStart_toStartOf="@+id/popup_sport_description_subtitle"
+        app:layout_constraintTop_toBottomOf="@+id/popup_sport_description_subtitle"
+        style="@style/TitleTextStyle"
+        tools:ignore="DuplicateIds,NotSibling" />
+
+    <TextView
+        android:id="@+id/popup_sport_difficult_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/popup_sport_difficult_subtitle"
+        app:layout_constraintStart_toStartOf="@+id/popup_sport_difficult_title"
+        app:layout_constraintTop_toBottomOf="@+id/popup_sport_difficult_title"
+        style="@style/DefaultTextStyle"
+        tools:ignore="NotSibling" />
+
+   <TextView
+        android:id="@+id/view_separation"
+        android:layout_width="1dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="50dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+       tools:ignore="MissingConstraints" />
+
+    <ImageView
+        android:id="@+id/delete_button"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@drawable/ic_trash_foreground"
+        android:layout_marginRight="40dp"
+        app:layout_constraintEnd_toStartOf="@+id/view_separation"
+        app:layout_constraintTop_toTopOf="@+id/view_separation" />
+
+    <ImageView
+        android:id="@+id/star_button"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@drawable/ic_unstar_foreground"
+        android:layout_marginLeft="40dp"
+        app:layout_constraintBottom_toBottomOf="@+id/view_separation"
+        app:layout_constraintStart_toEndOf="@+id/view_separation"
+        app:layout_constraintTop_toTopOf="@+id/view_separation" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
